@@ -10003,3 +10003,17 @@ task.spawn(function()
 		end)
 	end)
 end)
+ pcall(function()
+ local infiniteyield = COB("World", {
+     ["Name"] = "infiniteyield",
+     ["Function"] = function(callback)
+         if callback then
+             pcall(function()
+                 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+             end)
+         end
+     end,
+     ["Default"] = false,
+     ["HoverText"] = "script it's ez to ues"
+ })
+ end)
